@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto+Condensed:wght@400;700&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ 
+/*section 1*/
+
+    section {
+        padding: 100px 200px;
+    }
+
+    .home{
+        position: relative;
+        width: 100%;
+        min-height:100vh;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        background:white;
+    }
+
+    .home .content{
+        z-index:888;
+        color:whitesmoke;
+        width: 75%;
+        margin-top: 50px;
+        margin-left: -100px;
+    }
+
+    .home .content h1{
+        width: 100%;
+        font-size: 3em;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 50px;
+        margin-bottom: 15px;
+    }
+    .home .content p{
+        width: 90%;
+        margin-bottom: 65px;
+        color: white;
+        font-size: 1.3em;
+        margin-bottom: 30PX;
+    }
+
+.home .img {
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*section 2 information */
+/*
+.hr{
+  align-content: center;
+}*/
+.content-1 .info{
+  text-align:justify;
+  justify-self: center;
+}
+.content-1 .info h1{
+  text-align: center;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 1100px;
+}
+.card{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: whitesmoke;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transform: all 400ms ease;
+}
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3%);
+}
+
+.card .contenido{
+  padding: 15px;
+  text-align: center;
+  }
+
+  .card .contenido p{
+    line-height: 1.5;
+    color: grey;
+  }
+  .card .contenido h3{
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+/*section 4 video container*/
+
+.video{
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 1.15rem;
+    padding-top: 74px;
+    padding-bottom: 66px;
+    color: #fff;
+    text-decoration: none;
+    height: 100%;
+    max-height: 620px;
+    min-height: 380px;
+    z-index: 1;
+}
+
+.video-container a{
+  background:#002e3f;
+  padding: 15px 15px;
+  color: white;
+  font-size: 15px;
+  font-weight: 200;
+  text-decoration: none;
+  border: 50px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container h1{
+  text-align: center;
+}
+/*footer*/
+
+.section__container{
+ margin: auto;
+ width: 100px;
+ height: 100px;
+ text-align: center;
+ font-size: 1%;
+}
+
+.uni{
+text-align: center;
+font-weight: 900;
+color:#e4221e;
+}
+
+/*Responsive*/
+
+
+@media (max-width: 1040px){
+
+    header{
+        padding: 12px 20px;
+        position:fixed;
+    }
+
+    section {
+padding: 100px 20px;
+
+    }
+
+    .home .content{
+     margin-top: 50px;
+     margin-left: 10px;
+     width: 70%;
+     height: 70%;
+    }
+    .home .content h1{
+        margin-top: -20px;
+        font-size: 1em;
+    }
+
+    .content-1 .info{
+      text-align:justify;
+      justify-self: center;
+    }
+    .content-1 .info h1{
+      text-align: center;
+      font-size: medium;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+      max-width: 1080px;
+      padding: 10px 20px;
+    }
+    .card{
+      width: 100%;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: whitesmoke;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transform: all 400ms ease;
+    }
+    .card:hover{
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-3%);
+    }
+    
+    .card .contenido{
+      padding: 15px;
+      text-align: center;
+      }
+    
+      .card .contenido p{
+        line-height: 1.5;
+        color: grey;
+      }
+      .card .contenido h3{
+        font-weight: 900;
+        margin-bottom: 20px;
+      }
+    /*section 4 video container*/
+    
+    .video{
+      height:0px;
+      width:100%;
+      max-width:560px; /* Así establecemos el ancho máximo (si lo queremos) */
+      padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+      position:relative; 
+    }
+    
+    .video-container a{
+      width: 100%;
+    }
+    /*footer*/
+    
+    .section__container{
+     margin: auto;
+     width: 100px;
+     height: 100px;
+     text-align: center;
+     font-size: 1%;
+    }
+    
+    .uni{
+    text-align: center;
+    font-weight: 900;
+    color:#e4221e;
+    }
+}
