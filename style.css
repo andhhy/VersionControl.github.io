@@ -185,6 +185,13 @@ padding: 100px 20px;
     .home .content h1{
         margin-top: -20px;
         font-size: 1em;
+        width: 100%;
+      font-size: 3em;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 50px;
+      margin-bottom: 15px;
     }
 
     .content-1 .info{
